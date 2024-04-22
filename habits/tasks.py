@@ -16,7 +16,7 @@ def send_message_about_habits():
     habits = Habit.objects.all()
 
     for habit in habits:
-        print(habit.action)
+        # print(habit.action)
         if habit.date is None:
             habit.date = date_now
         if habit.date == date_now:
