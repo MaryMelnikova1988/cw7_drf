@@ -188,8 +188,4 @@ CELERY_BEAT_SCHEDULE = {
         'task': 'habits.tasks.send_message_about_habits',  # Путь к задаче
         'schedule': timedelta(seconds=30),  # Расписание выполнения задачи (например, каждую минуту)
     },
-    'task-hello': {
-        'task': 'habits.tasks.send_mess_hello',  # Путь к задаче
-        'schedule': timedelta(seconds=30),  # Расписание выполнения задачи (например, каждую минуту)
-    },
 }
